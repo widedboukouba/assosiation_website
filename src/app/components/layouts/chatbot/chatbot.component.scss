@@ -1,0 +1,87 @@
+.chatbot{
+    position: fixed;
+    top: 80%;
+    width: 189px;
+    z-index: 9999;
+    padding: 10px 5px;
+    left: 94%;
+}
+@media only screen and (max-width: 767px) {
+    .chatbot{
+        top: 80%;
+        width: 189px;
+        z-index: 9999;
+        padding: 10px 5px;
+        left: 75%;
+    }
+    .chatbotpart{
+        position: fixed;
+        top: 5% !important;
+        width: 350px !important;
+        z-index: 9999;
+        padding: 10px 5px;
+        left: 0% !important;
+    }
+}
+.chatbotpart{
+    position: fixed;
+    top: 15%;
+    width: 400px;
+    z-index: 9999;
+    padding: 10px 5px;
+    left: 65%;
+}
+.chatbotpart .card{
+    border-radius: 30px;
+    height: 550px;
+}
+.frame-box{
+    overflow-y: scroll;
+    border-radius: 15px;
+    height: 350px;
+}
+.message{
+    border-radius: 20px;
+    margin: 0 15px 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.message.to{
+    background-color: #2095FE;
+    color: #ffffff;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.message.from{
+    background-color: #e5e4e9;
+    color: #363636;
+    margin-right: 100px;
+    width: 300px;
+}
+
+.message.to + .message.to,
+.message.from + .message.from{
+    margin-top: -10px;
+}
+
+.form-control{
+border-radius: 30px;
+}
+.btn{
+    border-radius: 30px;
+}
+
+.bot{
+    background-color: #2096fe8b;
+    color: white;
+}
+.red{
+    margin-left: 100px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
