@@ -1080,17 +1080,20 @@ Banner Area CSS
             z-index: -1;
             width: 100%;
             height: 100%;
-            background: rgba(0, 112, 248, 0.878);
+            background: #6495ED; //couleur appliqué sur les photos 
             opacity: .8;
         }
         &.item-bg1 {
-            background-image: url(assets/img/home-one/home1.webP);
+            background-image: url(assets/img/home-one/instruction.jpg);
         }
         &.item-bg2 {
-            background-image: url(assets/img/home-one/home2.webP);
+            background-image: url(assets/img/home-one/handicap.jpg);
         }
         &.item-bg3 {
-            background-image: url(assets/img/home-one/home3.webP);
+            background-image: url(assets/img/home-one/harcelement.jpg);
+        }
+        &.item-bg4 {
+            background-image: url(assets/img/home-one/protection.jpg);
         }
         .main-banner-content {
             position: relative;
@@ -1118,7 +1121,7 @@ Banner Area CSS
                     }
                     &:not(:first-child) {
                         margin-left: 15px;
-                        background-color: #51bfff;
+                        background-color: rgb(30,144,255);
                         color: $black-color;
 
                         &:hover {
