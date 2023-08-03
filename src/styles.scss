@@ -5,7 +5,7 @@ Default CSS
 =================================================*/
 $main-font-family: 'Open Sans', sans-serif;
 $optional-font-family: 'Catamaran', sans-serif;
-$main-color: #0060A1;
+$main-color: #6495ED;
 $optional-color: #2289CA;
 $white-color: #ffffff;
 $black-color: #212121;
@@ -1475,7 +1475,7 @@ Services Area CSS
     right: 0;
     bottom: 0;
 }
-.single-services-box {
+.single-services-box {    //présentation de l association  les boxes
     text-align: center;
     margin-bottom: 30px;
     background-color: $white-color;
@@ -1500,11 +1500,11 @@ Services Area CSS
         transition: $transition;
 
         &.bg-deb0fe {
-            background-color: #deb0fe;
+            background-color: $main-color;
             color: $white-color;
         }
         &.bg-79e8e2 {
-            background-color: #79e8e2;
+            background-color: $main-color;
             color: $white-color;
         }
         &.bg-fcc774 {
@@ -1516,7 +1516,7 @@ Services Area CSS
             color: $white-color;
         }
         &.bg-fe929f {
-            background-color: #fe929f;
+            background-color: $main-color;
             color: $white-color;
         }
         &.bg-2e1342 {
