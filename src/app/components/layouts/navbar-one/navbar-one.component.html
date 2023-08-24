@@ -10,87 +10,121 @@
                 <ul class="navbar-nav ">
                     <li class="nav-item"><a routerLink="/" class="nav-link">Accueil</a>
                     </li>
-                    <li class="nav-item" data-bs-toggle="collapse"
-                        data-target=".navbar-collapse.show"><a
-                            routerLink="/lecabinet" class="nav-link"
-                            routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                            true}">Instruction<i class='bx
-                            bx-chevron-down'></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item" data-bs-toggle="collapse"
-                                    data-target=".navbar-collapse.show"><a
-                                        routerLink="/ExternalisationPaie" class="nav-link"
-                                        routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                        true}">IEF(Instruction en famille)</a></li>
-                                <li class="nav-item" data-bs-toggle="collapse"
-                                    data-target=".navbar-collapse.show"><a
-                                        routerLink="/InternalisationPaie" class="nav-link"
-                                        routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                        true}">Ecole</a></li>
-                               
-                            </ul>
-                        </li>
 
-                    <li class="nav-item"><a
-                            class="nav-link">Handicap <i class='bx
-                                bx-chevron-down'></i></a>
+
+<!-- Instruction -->
+<li class="nav-item" data-bs-toggle="collapse" data-target=".navbar-collapse.show">
+    <a routerLink="/instruction" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        Instruction<i class='bx bx-chevron-down'></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="instructionDropdown">
+ 
+        <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" routerLink="/instruction">IEF (Instruction en famille)</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/instruction">Demande d'autorisation</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">RAPO</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Tribunal administratif</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Contrôle de la mairie</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Contrôle de pédagogique</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" routerLink="/instruction">Ecole</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/instruction">Demande de dérogation maternelle</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Obligation assiduité</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Examen de santé</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Conseil de discipline et sanction</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Comission évitement scolaire</a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Parcours SUP </a></li>
+                <li><a class="dropdown-item" routerLink="/instruction">Sortie scolaire</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+
+
+
+
+
+
+<!-- handicap -->
+
+                    <li class="nav-item" data-bs-toggle="collapse"
+                    data-target=".navbar-collapse.show"><a
+                        routerLink="/handicap" class="nav-link"
+                        routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                        true}">Handicap<i class='bx
+                        bx-chevron-down'></i></a>
                         <ul class="dropdown-menu">
                             <li class="nav-item" data-bs-toggle="collapse"
-                                data-target=".navbar-collapse.show"><a
-                                    routerLink="/ExternalisationPaie" class="nav-link"
-                                    routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                    true}">ESS/GAVESCO</a></li>
+                            data-target=".navbar-collapse.show"><a
+                                routerLink="/handicap" class="nav-link"
+                                routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                                true}">ESS/GAVESCO</a></li>
                             <li class="nav-item" data-bs-toggle="collapse"
                                 data-target=".navbar-collapse.show"><a
-                                    routerLink="/InternalisationPaie" class="nav-link"
+                                    routerLink="/handicap" class="nav-link"
                                     routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                     true}">PPRE/PPS/PAI</a></li>
                             <li class="nav-item" data-bs-toggle="collapse"
                                 data-target=".navbar-collapse.show"><a
-                                    routerLink="/Audit"
+                                    routerLink="/handicap"
                                     class="nav-link"
                                     routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                     true}">Dossier MDPH</a></li>
-                            <li class="nav-item" data-bs-toggle="collapse"
-                                data-target=".navbar-collapse.show"><a
-                                    routerLink="/BilanSocial"
-                                    class="nav-link"
-                                    routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                    true}">Projet de vie</a></li>
-                            <li class="nav-item" data-bs-toggle="collapse"
-                                data-target=".navbar-collapse.show"><a
-                                    routerLink="/SousTraitance"
-                                    class="nav-link"
-                                    routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                    true}">Aménagement aux examens</a></li>
-                            <li class="nav-item" data-bs-toggle="collapse"
-                                data-target=".navbar-collapse.show"><a
-                                    routerLink="/SIRH"
-                                    class="nav-link"
-                                    routerLinkActive="active"[routerLinkActiveOptions]="{exact:
-                                    true}">Référent handicap rectorat </a></li>
+                                    <li class="nav-item" data-bs-toggle="collapse"
+                                    data-target=".navbar-collapse.show"><a
+                                        routerLink="/handicap"
+                                        class="nav-link"
+                                        routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                                        true}">Projet de vie</a></li>
+                                        <li class="nav-item" data-bs-toggle="collapse"
+                                        data-target=".navbar-collapse.show"><a
+                                            routerLink="/handicap"
+                                            class="nav-link"
+                                            routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                                            true}">Aménagement aux examens</a></li>
+                                            <li class="nav-item" data-bs-toggle="collapse"
+                                            data-target=".navbar-collapse.show"><a
+                                                routerLink="/handicap"
+                                                class="nav-link"
+                                                routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                                                true}">Référant handicap rectorat </a></li>
+                        
                         </ul>
                     </li>
+
+
+<!-- harcelement -->
                     <li class="nav-item" data-bs-toggle="collapse"
                         data-target=".navbar-collapse.show"><a
-                            routerLink="/actualités" class="nav-link"
+                            routerLink="/harcelement" class="nav-link"
                             routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                             true}">Harcèlement<i class='bx
                             bx-chevron-down'></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item" data-bs-toggle="collapse"
+                                data-target=".navbar-collapse.show"><a
+                                    routerLink="/harcelement" class="nav-link"
+                                    routerLinkActive="active"[routerLinkActiveOptions]="{exact:
+                                    true}">Harcèlement scolaire</a></li>
+                                <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/ExternalisationPaie" class="nav-link"
+                                        routerLink="/harcelement" class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Référent harcèlement</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/InternalisationPaie" class="nav-link"
+                                        routerLink="/harcelement" class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Les numéros à connaître</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/Audit"
+                                        routerLink="/harcelement"
                                         class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Programme phare</a></li>
@@ -98,38 +132,40 @@
                             </ul>
                         </li>
 
+
+    <!-- protection -->                    
                     <li class="nav-item" data-bs-toggle="collapse"
                         data-target=".navbar-collapse.show"><a
-                            routerLink="/nosoffres" class="nav-link"
+                            routerLink="/protection" class="nav-link"
                             routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                             true}">Protection de l'enfance<i class='bx
                             bx-chevron-down'></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/ExternalisationPaie" class="nav-link"
+                                        routerLink="/protection" class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Information préoccupante/ signalement</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/InternalisationPaie" class="nav-link"
+                                        routerLink="/protection" class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Mesure administrative</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/Audit"
+                                        routerLink="/protection"
                                         class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Mesures judicaires</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/BilanSocial"
+                                        routerLink="/protection"
                                         class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">MUE</a></li>
                                 <li class="nav-item" data-bs-toggle="collapse"
                                     data-target=".navbar-collapse.show"><a
-                                        routerLink="/SousTraitance"
+                                        routerLink="/protection"
                                         class="nav-link"
                                         routerLinkActive="active"[routerLinkActiveOptions]="{exact:
                                         true}">Les différents placements</a></li>
@@ -137,17 +173,21 @@
                             </ul></li>
                 
                 </ul>   
+
+                <!-- widget -->
                 <div class="others-options ">
                     <div class="single-footer-widget">
                         <ul class="footer-social">
                             <li><a href="https://www.facebook.com/coeursdenfants" target="_blank"><i class="flaticon-facebook"></i></a></li>
-                           <!-- <li><a href="" target="_blank"><i class="flaticon-instagram"></i></a></li>  -->
-                           <!-- <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li>   -->
-                            <li><a href="https://twitter.com/Lila97036737?t=Jptb8juw3lV7W-mzPr3T-g&s=09" target="_blank"><i class="flaticon-twitter"></i></a></li>
-                           
+                            <!-- <li><a href="" target="_blank"><i class="flaticon-instagram"></i></a></li> -->
+                            <!-- <li><a href="" target="_blank"><i class="bx bxl-linkedin"></i></a></li> -->
+                            <li><a href="https://twitter.com/Lila97036737?t=Jptb8juw3lV7W-mzPr3T-g&s=09" target="_blank"><i class="flaticon-twitter"></i></a></li>                                
+                      
                         </ul>
                     </div>
-                </div>        
+                </div>  
+                
+                
             </div>
         </nav>
     </div>

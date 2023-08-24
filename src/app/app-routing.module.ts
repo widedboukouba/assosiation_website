@@ -18,8 +18,23 @@ import { BilonSocialeComponent } from './components/pages/bilon-sociale/bilon-so
 import { AccompagnementSylaeComponent } from './components/pages/accompagnement-sylae/accompagnement-sylae.component';
 import { AccompagnementSIRHComponent } from './components/pages/accompagnement-sirh/accompagnement-sirh.component';
 import { HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { InstructionComponent } from './instruction/instruction.component';
+import { HandicapComponent } from './handicap/handicap.component';
+import { HarcelementComponent } from './harcelement/harcelement.component';
+import { ProtectionComponent } from './protection/protection.component';
 const routes: Routes = [
     {path: '', component: HomeOneComponent},
+    {path: 'instruction', component: InstructionComponent},
+    {path: 'handicap', component: HandicapComponent},
+    {path: 'harcelement', component: HarcelementComponent},
+    {path: 'protection', component: ProtectionComponent},
+
+
+
+
+
+
+
     {path: 'lecabinet', component: AboutComponent},
     {path: 'nosoffres', component: PricingComponent},
     {path: 'terms-conditions', component: TermsConditionsComponent},

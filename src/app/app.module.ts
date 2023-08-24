@@ -34,6 +34,10 @@ import { ChatbotComponent } from "./components/layouts/chatbot/chatbot.component
 import { environment } from "src/environments/environment";
 import { NgxCaptchaModule } from "ngx-captcha";
 import { RecaptchaModule } from "ng-recaptcha";
+import { InstructionComponent } from './instruction/instruction.component';
+import { HandicapComponent } from './handicap/handicap.component';
+import { HarcelementComponent } from './harcelement/harcelement.component';
+import { ProtectionComponent } from './protection/protection.component';
 const cookieConfig: NgcCookieConsentConfig = {
     cookie: {
         domain: "tinesoft.github.io",
@@ -55,11 +59,11 @@ const cookieConfig: NgcCookieConsentConfig = {
     type: "info",
     content: {
         message:
-            "LEA CONSEIL utilise les cookies ,vous pouvez accepter ou continuer votre navigation sans accepter",
+            "Association coeur d'enfant utilise les cookies ,vous pouvez accepter ou continuer votre navigation sans accepter",
         dismiss: "Autoriser les cookies",
         deny: "Continuer sans accepter",
         link: "Plus de details",
-        href: "http://leaconseil.com/#/privacy-policy",
+        href: " https://www.iubenda.com/en/privacy-and-cookie-policy-generator?utm_source=google&utm_medium=ppc_page&utm_campaign=row_pcp_new_search&utm_term=cookie%20policy%20generator&utm_content=628868915921&gclid=Cj0KCQjw_5unBhCMARIsACZyzS0rcBNci0LA4kElTsgfQjtMPHdLK_t_B9HtYcbSJJNu15hsD6fJ69MaApsPEALw_wcB ",
         policy: "Cookie Policy",
     },
 };
@@ -89,6 +93,10 @@ const cookieConfig: NgcCookieConsentConfig = {
         AccompagnementSylaeComponent,
         AccompagnementSIRHComponent,
         ChatbotComponent,
+        InstructionComponent,
+        HandicapComponent,
+        HarcelementComponent,
+        ProtectionComponent,
     ],
     imports: [
         BrowserModule,
