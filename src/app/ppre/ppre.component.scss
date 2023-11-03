@@ -2,7 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {    font-family:Montserrat !important;
+body {  
+   font-family:Montserrat !important;
     padding-top: 15rem;
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
@@ -42,6 +43,7 @@ h2{
 }
 .item-bg-1 {
     background-image: url('https://www.snies-unsa-education.org/images/p/pai/PAI-PPRE.jpg');
+  
 }
   h1{
     font-family:Montserrat !important;
