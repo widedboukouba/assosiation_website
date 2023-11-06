@@ -22,8 +22,8 @@ import { InstructionComponent } from './instruction/instruction.component';
 import { HandicapComponent } from './handicap/handicap.component';
 import { HarcelementComponent } from './harcelement/harcelement.component';
 import { ProtectionComponent } from './protection/protection.component';
-import { PpreComponent } from './ppre/ppre.component';
-import { ConsielDesiplineComponent } from './consiel-desipline/consiel-desipline.component';
+import { PpreComponent } from './components/pages/ppre/ppre.component';
+import { ConsielDesiplineComponent } from './components/pages/consiel-desipline/consiel-desipline.component';
 const routes: Routes = [
     {path: '', component: HomeOneComponent},
     {path: 'instruction', component: InstructionComponent},
